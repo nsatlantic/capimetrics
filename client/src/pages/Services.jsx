@@ -1,2 +1,2 @@
-﻿const Services = () => <div>Services</div>
+﻿const Services = () => null
 export default Services

@@ -1,2 +1,2 @@
-﻿const Industries = () => <div>Industries</div>
+﻿const Industries = () => null
 export default Industries
