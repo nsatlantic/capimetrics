@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary:   #70c3c5;
+  --color-secondary: #a48d70;
+  --color-accent:    #90ac83;
+  --color-bg:        #fafaf8;
+  --color-surface:   #f4f4f2;
+  --color-heading:   #1c1c1a;
+  --color-body:      #4a4a48;
+  --color-border:    #e4e4e2;
+
+  --font-size-base: 1.0625rem;
+  --line-height-base: 1.75;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  color: #4a4a48;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}

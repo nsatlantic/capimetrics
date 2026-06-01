@@ -1,2 +1,2 @@
-﻿const Home = () => <div>Home</div>
+﻿const Home = () => null
 export default Home

@@ -1,2 +1,2 @@
-﻿const Contact = () => <div>Contact</div>
+﻿const Contact = () => null
 export default Contact

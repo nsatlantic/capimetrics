@@ -1,2 +1,2 @@
-﻿const About = () => <div>About</div>
+﻿const About = () => null
 export default About
