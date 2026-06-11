@@ -1,12 +1,15 @@
+import { useLocation } from 'react-router-dom'
 import AppRoutes from './routes/AppRoutes'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 
 function App() {
+  const { pathname } = useLocation()
+
   return (
     <div className="bg-bg min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-1 pt-20">
+      <main className={`flex-1 ${pathname === '/' ? '' : 'pt-20'}`}>
         <AppRoutes />
       </main>
       <Footer />

@@ -14,7 +14,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen]   = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
+    const onScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.85)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${scrolled ? 'bg-bg/95 backdrop-blur-sm shadow-sm border-b border-border' : 'bg-transparent'}`}
+        ${scrolled ? 'bg-bg/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}
     >
       <div className="max-w-7xl mx-auto px-4 lg:px-8 h-20 grid grid-cols-3 items-center">
 

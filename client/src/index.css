@@ -18,8 +18,50 @@ html {
   font-size: 17px;
 }
 
+html {
+  background-color: #fafaf8;
+}
+
 body {
+  background-color: #fafaf8;
   color: #4a4a48;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
+
+/* ── Hero: gradient headline ── */
+.hero-gradient-text {
+  background: linear-gradient(to right, #70c3c5 0%, #90ac83 45%, #a48d70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Hero: dot-grid background ── */
+.hero-dot-grid {
+  background-image: radial-gradient(circle, rgba(28, 28, 26, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ── Hero: card float animations ── */
+@keyframes hero-float-main {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes hero-float-a {
+  0%, 100% { transform: rotate(4deg) translateY(0); }
+  50%       { transform: rotate(4deg) translateY(-10px); }
+}
+@keyframes hero-float-b {
+  0%, 100% { transform: rotate(-4deg) translateY(0); }
+  50%       { transform: rotate(-4deg) translateY(-8px); }
+}
+@keyframes hero-float-c {
+  0%, 100% { transform: rotate(2deg) translateY(0); }
+  50%       { transform: rotate(2deg) translateY(-6px); }
+}
+
+.hero-card-main    { animation: hero-float-main 6s ease-in-out infinite; }
+.hero-card-float-a { animation: hero-float-a 4s ease-in-out infinite; }
+.hero-card-float-b { animation: hero-float-b 5.5s ease-in-out infinite; animation-delay: -1.8s; }
+.hero-card-float-c { animation: hero-float-c 3.5s ease-in-out infinite; animation-delay: -0.9s; }
