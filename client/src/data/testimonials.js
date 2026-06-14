@@ -1,2 +1,60 @@
-﻿const testimonials = []
+const testimonials = [
+  {
+    id: 1,
+    quote: "Capimetrics cut our tax bill by 31% in the first year. They found deductions our previous firm missed for a decade.",
+    name: "Marcus Webb",
+    role: "Founder, Webb Construction",
+    initials: "MW",
+    accent: "primary",
+  },
+  {
+    id: 2,
+    quote: "Zero payroll errors in two years. Our team gets paid on time, every time. That's priceless for morale.",
+    name: "Priya Nair",
+    role: "CFO, Nair Logistics",
+    initials: "PN",
+    accent: "accent",
+  },
+  {
+    id: 3,
+    quote: "They didn't just handle our books — they helped us map out a 3-year growth strategy. Night and day from a typical CPA firm.",
+    name: "James Okafor",
+    role: "CEO, Okafor Digital",
+    initials: "JO",
+    accent: "secondary",
+  },
+  {
+    id: 4,
+    quote: "Audit prep used to take weeks of stress. Capimetrics had everything ready in three days. I don't know how they do it.",
+    name: "Sandra Lim",
+    role: "Director, Lim Real Estate Group",
+    initials: "SL",
+    accent: "primary",
+  },
+  {
+    id: 5,
+    quote: "Switched to Capimetrics after a rough tax season elsewhere. Best business decision we made that year.",
+    name: "Tom Ferrara",
+    role: "Owner, Ferrara Hospitality",
+    initials: "TF",
+    accent: "accent",
+  },
+  {
+    id: 6,
+    quote: "Our investors ask about financials constantly. Having Capimetrics means I can answer every question with total confidence.",
+    name: "Aisha Kamara",
+    role: "Co-founder, Kamara Health",
+    initials: "AK",
+    accent: "secondary",
+  },
+  {
+    id: 7,
+    quote: "They proactively flagged a compliance issue before it became a fine. That one call saved us tens of thousands of dollars.",
+    name: "Derek Huang",
+    role: "VP Finance, Huang E-Commerce",
+    initials: "DH",
+    accent: "primary",
+  },
+]
+
 export default testimonials

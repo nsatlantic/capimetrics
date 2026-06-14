@@ -1,2 +1,48 @@
-﻿const team = []
+const team = [
+  {
+    id: 1,
+    name: 'Tushant Nayak',
+    role: 'Managing Partner, CPA',
+    bio: 'With years of hands-on experience across tax, advisory, and financial strategy, Tushant leads Capimetrics with precision and a deep commitment to every client.',
+    initials: 'TN',
+    accent: 'primary',
+    photo: '/images/team/tushant.jpg',
+    email: 'tushant@capimetrics.com',
+    phone: '+1 (555) 100-2000',
+  },
+  {
+    id: 2,
+    name: 'Anita Patel',
+    role: 'Director of Tax Strategy',
+    bio: 'Former Big Four advisor specializing in multi-state tax planning and IRS dispute resolution.',
+    initials: 'AP',
+    accent: 'accent',
+    photo: null,
+    email: 'anita@capimetrics.com',
+    phone: '+1 (555) 100-2001',
+  },
+  {
+    id: 3,
+    name: 'Derek Williams',
+    role: 'Head of Advisory',
+    bio: 'Helps founders and CEOs translate financials into growth decisions — from Series A through acquisition.',
+    initials: 'DW',
+    accent: 'secondary',
+    photo: null,
+    email: 'derek@capimetrics.com',
+    phone: '+1 (555) 100-2002',
+  },
+  {
+    id: 4,
+    name: 'Sarah Okonkwo',
+    role: 'Senior Accountant',
+    bio: 'Meticulous and fast. Sarah runs month-end closes and financial reporting for our largest clients.',
+    initials: 'SO',
+    accent: 'primary',
+    photo: null,
+    email: 'sarah@capimetrics.com',
+    phone: '+1 (555) 100-2003',
+  },
+]
+
 export default team
