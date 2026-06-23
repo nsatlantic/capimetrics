@@ -5,12 +5,13 @@ const bars = [38, 52, 44, 68, 75, 88, 100]
 const HeroSection = () => (
   <section className="relative h-screen overflow-hidden">
 
-    {/* Ambient colour blobs */}
-    <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-      <div className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full bg-primary/10 blur-[160px]" />
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full bg-secondary/10 blur-[130px]" />
-      <div className="absolute top-[40%] left-[35%] w-[400px] h-[400px] rounded-full bg-accent/10 blur-[100px]" />
-    </div>
+    {/* Ambient colour blobs — SVG radial gradients, same look without GPU blur */}
+    <img
+      src="/hero-blobs.svg"
+      className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+      aria-hidden="true"
+      alt=""
+    />
 
     {/* Dot grid */}
     <div className="hero-dot-grid absolute inset-0 pointer-events-none" aria-hidden="true" />
